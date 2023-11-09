@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-btn-primary {
+  color: #fff;
+  background-color: #0c6cb6;
+  box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);
+}
+.ant-btn-primary:hover {
+  color: #fff;
+  background-color: #0a5792 !important;
+}
+.ant-btn {
+  cursor: pointer;
+}
+.ant-table-filter-dropdown .ant-btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ant-modal-body {
+  max-height: 80vh;
+  overflow: auto;
+}
+.ant-layout {
+  background-color: #ffffff;
+}
+.ant-form-item .ant-form-item-label >label::after {
+  display: none;
+}
+.ant-form-item-required >label::after {
+  display: block;
+}
+.ant-form-item .ant-form-item-label >label {
+  min-height: 22px !important;
+  height: initial !important;
+}
+.ant-form-item .ant-form-item-control-input {
+  min-height: 22px !important;
+}
+.ant-form-item
+  .ant-form-item-label
+  > label.ant-form-item-required:not(
+    .ant-form-item-required-mark-optional
+  )::before {
+  /* display: inline-block; */
+  margin-inline-end: 4px;
+  color: #ff4d4f;
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: "*";
+  display: none;
+}
+.ant-form-item
+  .ant-form-item-label
+  > label.ant-form-item-required:not(
+    .ant-form-item-required-mark-optional
+  )::after {
+  display: inline-block;
+  margin-inline-end: 4px;
+  color: #ff4d4f;
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: "*";
+}
+.ant-form-item-label label {
+  font-weight: bold;
+}
+.ant-switch:not(.ant-switch-disabled) {
+  background: rgba(0, 0, 0, 0.45);
+}
+.ant-switch.ant-switch-checked {
+  background: #1677ff;
+}
+.ant-page-header-heading-title h4 {
+  font-size: 40px;
+}
+.ant-page-header-heading-title h6 {
+  font-size: 30px;
+}
+.ant-segmented-item-selected {
+  color: #fff !important;
+  background-color: #0c6cb6 !important;
+}
+.ant-modal-root .ant-modal-mask {
+  z-index: 1031 !important;
+}
+.ant-modal-root .ant-modal-wrap {
+  z-index: 1031 !important;
+}
+.ant-segmented .ant-segmented-item {
+  margin-bottom: 0 !important;
+}
+.ant-image-preview-root .ant-image-preview-mask {
+  z-index: 1032 !important;
+}
+.ant-image-preview-root .ant-image-preview-wrap {
+  z-index: 1032 !important;
+}
+.no-mb {
+  margin-bottom: 0 !important;
+}
+.ant-form-item .ant-form-item-label > label {
+  white-space: normal;
+}
+.crud-form-modal .ant-row {
+	gap: 16px;
+}
+.ant-input-number-handler-wrap {
+  display: none !important;
+}
+@media only screen and (min-width: 1000px) {
+  .crud-form-modal {
+    width: 800px !important;
+  }
+  .ant-table-container > .ant-table-content {
+    min-height: 64vh;
+  }
+}
+.message-style {
+  border-radius: 0px 10px 10px 10px;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+}
